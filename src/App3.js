@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
-import { useMovies } from "./useMovies";
-import { useLocalStorageState } from "./useLocalStorageState";
-import StarRating from "./StarRating";
-import { useKeyPress } from "./useKeyPress";
+import { useMovies } from "./useMovies.js";
+import { useLocalStorageState } from "./useLocalStorageState.js";
+import StarRating from "./StarRating.js";
+import { useKeyPress } from "./useKeyPress.js";
 const API_KEY = "6a2a72a6";
 
 const average = (arr) =>
