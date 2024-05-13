@@ -304,7 +304,7 @@ function SelectedMovie({
         setIsRated(0);
 
         const res = await fetch(
-          `http://www.omdbapi.com/?apikey=${API_KEY}&i=${selectedMovieID}`
+          `https://www.omdbapi.com/?apikey=${API_KEY}&i=${selectedMovieID}`
         );
 
         const data = await res.json();
