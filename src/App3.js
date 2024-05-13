@@ -321,7 +321,7 @@ function SelectedMovie({
 
       fetchMovieDetail();
     },
-    [selectedMovieID]
+    [selectedMovieID, watchedList]
   );
 
   useEffect(
