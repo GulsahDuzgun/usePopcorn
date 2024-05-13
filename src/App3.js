@@ -104,9 +104,10 @@ function Button({ handleClick, isOpen }) {
 }
 
 function MovieSummary({ watched }) {
+  console.log(watched);
   const avgImdbRating = average(watched.map((movie) => movie.imdbRating));
   const avgUserRating = average(watched.map((movie) => movie.userRating));
-  const avgRuntime = average(watched.map((movie) => movie.runtime));
+  const avgRuntime = average(watched.map((movie) => movie.runTime));
 
   return (
     <div className="summary">
@@ -210,7 +211,7 @@ export default function App() {
   function handleDeleteWatchedMovie(id) {
     setWatched((watchedList) => watchedList.filter((mov) => mov.imdbID !== id));
   }
-
+  console.log(watched);
   return (
     <>
       <Navbar>
