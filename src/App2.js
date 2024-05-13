@@ -255,7 +255,7 @@ export default function App() {
           setErrObj("");
 
           const res = await fetch(
-            `http://www.omdbapi.com/?i=tt3896198&apikey=${API_KEY}&s=${query}`,
+            `https://www.omdbapi.com/?i=tt3896198&apikey=${API_KEY}&s=${query}`,
             { signal: controller.signal }
           );
           if (!res.ok)
@@ -372,7 +372,7 @@ function SelectedMovie({
         setIsRated(0);
 
         const res = await fetch(
-          `http://www.omdbapi.com/?apikey=${API_KEY}&i=${selectedMovieID}`
+          `https://www.omdbapi.com/?apikey=${API_KEY}&i=${selectedMovieID}`
         );
 
         const data = await res.json();
